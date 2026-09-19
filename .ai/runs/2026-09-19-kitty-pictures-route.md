@@ -35,9 +35,9 @@ Add a `GET /kitty` page that displays exactly one randomly selected embedded kit
 
 ### Phase 1: Kitty selection and assets
 
-- [x] 1.1 Add embedded black and red kitty SVG assets and a selection helper with injectable time/randomness for deterministic tests. — 5c1f096
+- [x] 1.1 Add embedded black and red kitty SVG assets and a selection helper with injectable time/randomness for deterministic tests. — 98a9929
 
 ### Phase 2: HTTP surface and verification
 
-- [x] 2.1 Add the `/kitty` handler, template, and route while preserving existing middleware and route behavior. — 2903f05
+- [x] 2.1 Add the `/kitty` handler, template, and route while preserving existing middleware and route behavior. — 98a9929
 - [ ] 2.2 Add focused tests for parity, random selection, one-image output, and route errors; run the configured validation gate.
