@@ -14,6 +14,7 @@ func (app *application) routes() http.Handler {
 
 	mux.HandleFunc("GET /", app.home)
 	mux.HandleFunc("GET /kitty", app.kittyPage)
+	mux.HandleFunc("GET /ascii-candles", app.asciiCandlesPage)
 
 	return app.logRequest(app.recoverPanic(app.securityHeaders(mux)))
 }

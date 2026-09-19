@@ -4,9 +4,11 @@ import (
 	"flag"
 	"fmt"
 	"log/slog"
+	"net/http"
 	"os"
 	"runtime/debug"
 	"sync"
+	"time"
 
 	"org.melements/skills-test/internal/env"
 	"org.melements/skills-test/internal/version"
@@ -35,6 +37,7 @@ type application struct {
 	logger *slog.Logger
 	wg     sync.WaitGroup
 	kitty  kittyPicker
+	market marketDataClient
 }
 
 func run(logger *slog.Logger) error {
@@ -56,6 +59,7 @@ func run(logger *slog.Logger) error {
 		config: cfg,
 		logger: logger,
 		kitty:  newKittyPicker(),
+		market: yahooClient{httpClient: &http.Client{Timeout: 10 * time.Second}, url: yahooSPYURL},
 	}
 
 	return app.serveHTTP()
