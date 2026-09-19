@@ -40,4 +40,4 @@ Add a `GET /kitty` page that displays exactly one randomly selected embedded kit
 ### Phase 2: HTTP surface and verification
 
 - [x] 2.1 Add the `/kitty` handler, template, and route while preserving existing middleware and route behavior. — 98a9929
-- [ ] 2.2 Add focused tests for parity, random selection, one-image output, and route errors; run the configured validation gate.
+- [x] 2.2 Add focused tests for parity, random selection, one-image output, and route errors; run the configured validation gate. — 1ca30c5
