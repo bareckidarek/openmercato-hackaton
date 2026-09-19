@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title id="title">Black kitty stretching</title>
+  <path fill="#000" d="m69 103-24-68 68 35c21-9 43-9 64 0l68-35-24 68c10 13 15 29 15 47 0 42-36 65-91 65s-91-23-91-65c0-18 5-34 15-47Zm48 28a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm86 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm-70 35c12 8 25 8 37 0-5 22-32 22-37 0Z"/>
+  <path fill="#fff" d="M84 186c18 8 37 11 76 11s58-3 76-11c-13 25-38 36-76 36s-63-11-76-36Z"/>
+</svg>
