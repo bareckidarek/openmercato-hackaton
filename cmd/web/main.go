@@ -34,6 +34,7 @@ type application struct {
 	config config
 	logger *slog.Logger
 	wg     sync.WaitGroup
+	kitty  kittyPicker
 }
 
 func run(logger *slog.Logger) error {
@@ -54,6 +55,7 @@ func run(logger *slog.Logger) error {
 	app := &application{
 		config: cfg,
 		logger: logger,
+		kitty:  newKittyPicker(),
 	}
 
 	return app.serveHTTP()
