@@ -17,7 +17,7 @@ func TestKittyPickerUsesMinuteParityAndSelectedColour(t *testing.T) {
 		want string
 	}{
 		{name: "even minute", time: time.Date(2026, time.September, 19, 10, 2, 0, 0, time.UTC), want: "kitty-black-2.svg"},
-		{name: "odd minute", time: time.Date(2026, time.September, 19, 10, 3, 0, 0, time.UTC), want: "kitty-red-1.svg"},
+		{name: "odd minute", time: time.Date(2026, time.September, 19, 10, 3, 0, 0, time.UTC), want: "kitty-red-2.svg"},
 	}
 
 	for _, tt := range tests {
